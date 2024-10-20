@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.19)
 project(wxthree)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 
 include(FetchContent)
 
@@ -26,7 +26,7 @@ set(THREEPP_WITH_GLFW OFF) # Disable default GLFW backend as we use WxWidgets
 FetchContent_Declare(
         threepp
         GIT_REPOSITORY https://github.com/markaren/threepp.git
-        GIT_TAG 12d6db13fe3d03d0f173621f1954016e61c9d99b
+        GIT_TAG 2e2397e0b7f0e639f254ea3046b70e53a71f0387
 )
 FetchContent_MakeAvailable(threepp)
 
